@@ -4,7 +4,7 @@
     </head>
     <body>
         <h1>
-            this is login page
+            Hello ${name} this is the login page
         </h1>
     </body>
 </html>
