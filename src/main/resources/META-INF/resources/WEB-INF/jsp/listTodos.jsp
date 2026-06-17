@@ -6,33 +6,34 @@
         <link href="webjars\bootstrap\5.1.3\css\bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            welcome ${name}
-        </div>
-        <hr>
-        <h1>
-            here are your todos:
-        </h1>
-        <table>
-            <thead>
-            <tr>
-                <th>id</th>
-                <th>Description</th>
-                <th>Target Date</th>
-                <th>Is Done?</th>
-            </tr>
-            </thead>
-            <tbody>
-            <c:forEach items="${todos}" var="todo">
+        <div class="container">
+            <p>
+                welcome ${name}
+            </p>
+            <h1>
+                here are your todos:
+            </h1>
+            <table class="table">
+                <thead>
                 <tr>
-                    <th>${todo.id}</th>
-                    <th>${todo.description}</th>
-                    <th>${todo.target}</th>
-                    <th>${todo.done}</th>
+                    <th>id</th>
+                    <th>Description</th>
+                    <th>Target Date</th>
+                    <th>Is Done?</th>
                 </tr>
-            </c:forEach>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                <c:forEach items="${todos}" var="todo">
+                    <tr>
+                        <th>${todo.id}</th>
+                        <th>${todo.description}</th>
+                        <th>${todo.target}</th>
+                        <th>${todo.done}</th>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
         <script src="webjars\bootstrap\5.1.3\js\bootstrap.min.js"></script>
         <script src="webjars\jquery\3.6.0\jquery.min.js"></script>
     </body>

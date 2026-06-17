@@ -3,9 +3,11 @@
         <title>Welcome</title>
     </head>
     <body>
-        <div>welcome</div>
-        <div>your name is ${name}</div>
-        <div>your password is ${password}</div>
-        <div> <a href="list-todos">Manage your todos</a></div>
+        <div class="container">
+            <p>welcome</p>
+            <p>your name is ${name}</p>
+            <p>your password is ${password}</p>
+            <p> <a href="list-todos">Manage your todos</a></p>
+        </div>
     </body>
 </html>
